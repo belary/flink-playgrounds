@@ -47,9 +47,9 @@ import static org.apache.flink.playgrounds.ops.clickcount.ClickEventCount.WINDOW
  */
 public class ClickEventGenerator {
 
-	public static final int EVENTS_PER_WINDOW = 4;
+	public static final int EVENTS_PER_WINDOW = 3;
 
-	private static final List<String> pages = Arrays.asList("/help", "/index", "/shop", "/jobs", "/about", "/news");
+	private static final List<String> pages = Arrays.asList( "/index", "/shop", "/jobs", "/about", "/news");
 
 	//this calculation is only accurate as long as pages.size() * EVENTS_PER_WINDOW divides the
 	//window size
