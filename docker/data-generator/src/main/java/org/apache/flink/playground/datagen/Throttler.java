@@ -100,15 +100,15 @@ final class Throttler {
     }
   }
 
-  public static void main(String[] args) {
-
-    float ratePerSubtask = (float)10000;
-    long throttleBatchSize = ((int) (ratePerSubtask/20))  + 1;
-    long nanosPerBatch = ((int) (1_000_000_000L / ratePerSubtask)) * throttleBatchSize;
-
-    System.out.println("ratePerSubtask=" + ratePerSubtask);
-    System.out.println("throttleBatchSize=" + throttleBatchSize);
-    System.out.println("nanosPerBatch=" + nanosPerBatch);
-    System.out.println("System.nanoTime()=" + System.nanoTime());
-  }
+//  public static void main(String[] args) {
+//
+//    float ratePerSubtask = (float)10000;
+//    long throttleBatchSize = ((int) (ratePerSubtask/20))  + 1;
+//    long nanosPerBatch = ((int) (1_000_000_000L / ratePerSubtask)) * throttleBatchSize;
+//
+//    System.out.println("ratePerSubtask=" + ratePerSubtask);
+//    System.out.println("throttleBatchSize=" + throttleBatchSize);
+//    System.out.println("nanosPerBatch=" + nanosPerBatch);
+//    System.out.println("System.nanoTime()=" + System.nanoTime());
+//  }
 }
